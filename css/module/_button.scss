@@ -1,0 +1,38 @@
+.btn-facebook{
+	display: inline-block;
+	height: 24px;
+	width: 24px;
+	background-image: url("../img/20.png");
+	margin-left: 2px;
+}
+
+.btn-twitter{
+	display: inline-block;
+	height: 24px;
+	width: 24px;
+	background-image: url("../img/19.png");
+	margin-left: 2px;
+}
+
+.btn-valide{
+	display: block;
+	width: 122px;
+	height: 45px;
+	margin-top: 15px;
+	background-color: #82ad6c;
+	border: solid 1px #333;
+	@include border-radius(3px);
+
+	color: #fff;
+	padding-top: 10px;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	@include text-shadow(0px 1px 5px rgba(00, 00, 00, 1));
+}
+
+.btn-valide:hover{
+	background-color: $secondarybgcolor;
+    @include transition(background-color 1s linear);
+
+}

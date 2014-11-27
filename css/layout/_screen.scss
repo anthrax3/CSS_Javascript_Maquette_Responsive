@@ -1,0 +1,54 @@
+/* Large Screen */
+@media only screen and (max-width: $xlarge) {
+	h1 { padding-top: 35px; }
+	h2 { font-size: 14px; line-height: 24px;}
+	.l-container { width: $large;}
+	nav.menu ul { float: left; margin-top: 0px; margin-bottom: 35px;}
+	nav.menu li ul { top: 15px; }
+	.slide .slideshow { width: $large;}
+	.slide .slideshow .prev { left: 5px;}
+	.slide .slideshow .next { right: 5px;}
+	.content article { width: 236px;}
+	.carousel img { width: 230px; height: 168px;}
+	.carousel ul li a { top: 175px;}
+	.information { line-height: 20px;}
+	.information #aboutus { width: 365px;}
+	.information #whyus { width: 365px;}
+	.information #whyus figcaption { width: 265px; margin-bottom: 30px;}
+}
+
+/* Medium Screen */
+@media only screen and (max-width: $large) {
+	.l-container{ width: $medium;}
+	nav.menu ul li { float: none; border-top: solid 1px #FFF; min-height: 35px; width: $medium; display: block; line-height: 35px;}
+	nav.menu ul li ul { position: relative; top: 0px; margin-bottom: 0px;}
+	nav.menu ul li ul li{ height: 35px; width: $medium; border-bottom: none;}
+	nav.menu ul .sublevel:after{ content: none;}
+	nav.menu ul .sublevel > a:after{ content: "▼"; float: right;}
+	.slide .slideshow { width: $medium; height: 160px;}
+	.slide .slideshow li a { top: 60px;}
+	.content article { width: $medium; height: auto; margin-bottom: 0px;}
+	.content article + article { margin-top: 30px;}
+	.content article + article { margin-top: 30px;}
+	.carousel img { width: #{$medium - 20};}
+	.carousel > div > figure:nth-child(4){ display: none;}
+	.carousel > div > figure:nth-child(5){ display: none;}
+	.carousel > div > ul > li:nth-child(1){ display: none;}
+
+}
+
+/* Small Screen */
+@media only screen and (max-width: $medium) {
+	nav.menu header { background-image: url("../img/18-small.png"); width: 100%; height: 131px; background-repeat: no-repeat}
+	.l-container{ width: 100%;}
+	nav.menu ul li { width: $small;}
+	nav.menu ul li ul li { width: $small;}
+	.slide .slideshow { width: 100%;}
+	.content article{ width: 100%;}
+	.carousel img { width: #{$small - 20};}
+	.carousel ul li a { display: none;}
+	.information #aboutus { width: 100%;}
+	.information #whyus { width: 100%;}
+	.information #whyus img { width: 20%; }
+	.information #whyus figcaption { width: 80%; }
+}

@@ -1,0 +1,29 @@
+@import "compass";
+@import "compass/reset";
+
+/* Variables */
+$primarybgcolor: #ccffff;
+$secondarybgcolor: #9a99ff;
+$otherbgcolor: #FFF;
+
+$small: 300px!default;
+$medium: 420px!default;
+$large: 750px!default;
+$xlarge: 1050px!default;
+
+/* Layout */
+@import "base/base";
+@import "layout/grid";
+
+/* Module */
+@import "module/header";
+@import "module/menu";
+@import "module/slideshow";
+@import "module/content";
+@import "module/carousel";
+@import "module/information";
+@import "module/footer";
+@import "module/button";
+
+/* Screen */
+@import "layout/screen";
